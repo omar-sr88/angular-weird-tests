@@ -1,0 +1,131 @@
+body {
+  padding-top: 20px;
+}
+.logo {
+	text-align: center;
+}
+
+.scup {
+	font-size: 2em;
+    font-weight: bold;
+    color: #9d9d9d;
+}
+.fale {
+	font-size: 1.5em;
+	color: #a9a9a9
+}
+.fale > sup{
+	font-size: 1em;
+	color: #ccc;
+}
+.inputs {
+	padding-top: 2em;
+	padding-bottom: 2em;
+}
+
+.inputs .contents {
+	text-align: center;	
+}
+.inputs .contents > h4 {
+	text-align: center;	
+	color: lightgray;
+}
+
+::-webkit-input-placeholder {
+   text-align: center;
+   color: lightgray;
+}
+
+.local {
+	width: 60px;
+	height: 30px;
+	background: gray;
+	border: none;
+	color: lightgray;
+    text-align: center;   
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+
+.inputs .contents label{
+	font-size: 0.8em;
+	color: #a2a1a1;
+	position: absolute;
+    left: 15px;
+}
+
+
+.input-group{
+	/*width: calc(100% / 4);*/
+	padding-right: 1em;
+}
+
+.plus-icon {
+	display:inline-block;
+	width: 15px;
+	height: 15px;
+	background-color: gray;
+	margin-left: 0.5em;
+}
+
+.input-group i{
+    vertical-align: super;
+    color: white;
+    font-size: 8px;		
+}
+
+
+.separador > div {
+	border-right: 1px solid #eee;
+
+}
+.separador div:first-child {
+  border-left: none;
+}
+.separador div:last-child {
+  border-right: none;
+}
+
+
+
+.results .contents {
+	text-align: center;
+}
+
+
+.resultado {
+	float: left;
+	width: calc(100% / 4);
+}
+
+.resultado  label{
+	color: #9d9d9d;
+
+}
+.close-modal {
+	position: relative;
+    float: right;
+    left: 15px;
+    top: -10px;
+}
+
+.container hr {
+	width: 70%;
+}
+
+.valor {
+	color: gray;
+}
+
+.reais{
+	font-size: 2.5em;
+}
+.centavos{
+
+}

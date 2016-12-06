@@ -1,0 +1,32 @@
+{
+  "name": "scup-test",
+  "description": "Scup Coding Test",
+  "version": "1.0.0",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-mocks": "1.5.x",
+    "bootstrap": "^3.3.7",
+    "font-awesome": "fontawesome#^4.7.0",
+    "angular-bootstrap": "^2.1.4",
+    "angular-resource": "1.5.x",
+    "angular-animate": "^1.5.8",
+    "angular-route": "^1.5.8",
+    "jquery": "^3.1.1",
+    "animate.css": "^3.5.2"
+  },
+  "authors": [
+    "omar-sr88 <omar.sr88@gmail.com>"
+  ],
+  "main": "",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ]
+}

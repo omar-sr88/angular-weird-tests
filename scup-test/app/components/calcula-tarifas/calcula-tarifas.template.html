@@ -1,0 +1,49 @@
+<div class="container">
+<div class="row logo">
+        <div class="col-md-3"></div>
+        <div class="col-md-6"><span class="scup">scup</span> <span class="fale">Fale<sup>+<sup>+</sup></sup></span></div>
+        <div class="col-md-3"></div>
+</div>
+<hr>
+
+<div class="row inputs">
+        <div class="col-md-3"></div>
+        <div class="col-md-6 contents">
+                <h4>Compare Planos</h4>
+        	<form class="form-inline">
+        	 <div class="form-group input-group">
+			<label for="origem">Origem</label> <br>
+			<input class="local" ng-model="$ctrl.origem" placeholder="DDD" ng-Disabled="true">     
+                        <span ng-click="$ctrl.showModalOrigem()" class="plus-icon"><i class="fa fa-plus " aria-hidden="true"></i></span>
+        	 </div>
+
+        	 <div class="form-group input-group">
+		        <label for="origem">Destino</label> <br>
+		        <input class="local" ng-model="$ctrl.destino" placeholder="DDD" ng-Disabled="true">
+                        <span ng-click="$ctrl.showModalDestino()" class="plus-icon"><i class="fa fa-plus" aria-hidden="true"></i></span>
+        	 </div>
+        	  <div class="form-group input-group">
+      			<label for="origem">Tempo</label> <br>
+      			<input class="local time" type="number" ng-model="$ctrl.tempo" placeholder="MM" min="1" ng-min="1"> 
+                           
+        	 </div>
+        	</form>
+        </div>
+        <div class="col-md-3"></div>
+</div>
+<hr>
+
+
+<div class="row results">
+        <div class="col-md-2"></div>
+        <div class="col-md-8 contents separador">
+          <div class="resultado" ng-repeat="valor in $ctrl.valores">
+             <label for="fale30">{{valor.plano}}</label> <br>
+             <span ng-show="!$ctrl.exibir">-</span>
+             <span class="valor" ng-show="$ctrl.exibir">R$<span class="reais" ng-bind="valor.valor[0]"></span>,<span class="centavos" ng-bind="valor.valor[1]"></span></span>
+           </div> 
+        </div>
+        <div class="col-md-2"></div>
+</div>
+
+</div>

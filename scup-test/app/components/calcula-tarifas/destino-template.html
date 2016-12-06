@@ -1,0 +1,11 @@
+
+            <div class="modal-content">
+            	<button class="close-modal" ng-click="$modalCtrl.cancel()">X</button>
+              <div class="modal-body">
+                <table class="table table-striped">
+                	<tr ng-repeat="cidade in $modalCtrl.cidades" ng-if="cidade.ddd != $modalCtrl.origem">
+                		<td ng-click="$modalCtrl.setDestino(cidade.ddd)">{{cidade.ddd}} - {{cidade.city}}</td>
+                	</tr>
+                </table>
+              </div>
+            </div>
